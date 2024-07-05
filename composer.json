@@ -1,0 +1,47 @@
+{
+    "name": "laraveldesign/fontawesome",
+    "description": "LaravelDesign Fontawesome package for Laravel",
+    "version": 1.0,
+    "keywords": [
+        "laraveldesign",
+        "fontawesome"
+    ],
+    "homepage": "https://github.com/laraveldesign/fontawesome",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Shane Barron",
+            "email": "mrshanebarron@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Laraveldesign\\Fontawesome\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Laraveldesign\\Fontawesome\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Laraveldesign\\Fontawesome\\FontawesomeServiceProvider"
+            ],
+            "aliases": {
+                "Fontawesome": "Laraveldesign\\Fontawesome\\FontawesomeFacade"
+            }
+        }
+    }
+}
